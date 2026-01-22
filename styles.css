@@ -56,12 +56,8 @@ main {
   width: 100%;
   margin: 0 120px;
 
-  #corridas,
-  #equipamentos {
-    margin-bottom: 75px;
-  }
-
   section {
+    margin-bottom: 75px;
     display: flex;
     flex-flow: row wrap;
     gap: 50px;
