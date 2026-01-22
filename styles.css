@@ -56,8 +56,111 @@ main {
   width: 100%;
   margin: 0 120px;
 
-  section {
-    margin-bottom: 75px;
+.cardprincipal-orcamento {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.secao-ajuste {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
+  }
+
+.card-form {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+.card-form h3 {
+    margin-top: 0;
+    font-size: 16px; }
+
+.campo-entrada {
+    margin-bottom: 15px;
+  }
+
+label { 
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  }
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.botao-adicionar {
+  background: #fc4c02;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.botao-adicionar:hover {
+  background: #383838;
+}
+
+.card-resumo-orcamento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-resumo {
+  background: #fc4c02;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.tabela-orcamento {
+  background: #fc4c02;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse; 
+  font-size: 13px; 
+}
+table h4 {
+  margin-bottom: 10px;
+  color: black;
+}
+th, td {
+  padding: 12px; 
+  border-bottom: 1px solid #ddd; 
+}
+
+th { 
+  color: white;
+  text-align: left; 
+  border-bottom: 2px solid white; 
+  padding: 10px; color: black; 
+}
+
+section {
+  margin-bottom: 75px;
     display: flex;
     flex-flow: row wrap;
     gap: 50px;
@@ -83,7 +186,7 @@ main {
         align-items: center;
         gap: 25px;
         background-color: #ffffff;
-        border: 2px solid #000000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         padding: 35px 35px 25px 35px;
 
         #paragrafos {
@@ -127,3 +230,4 @@ main {
 html {
   scroll-behavior: smooth;
 }
+

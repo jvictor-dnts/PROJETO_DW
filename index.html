@@ -29,11 +29,77 @@
       </nav>
     </header>
     <main>
+
+      <section id="calculadora">
+
+        <div class="cardprincipal-orcamento">
+          <div class="secao-ajuste">
+          <aside class="card-form">
+          <h3>Novo Item</h3>
+            <div class="campo-entrada">
+                <label>Descrição</label>
+                <input type="text" placeholder="Ex: Tênis Corre 4">
+            </div>
+            <div class="campo-entrada">
+                <label>Categoria</label>
+                <select>
+                    <option>Corridas</option>
+                    <option>Equipamentos</option>
+                    <option>Planilhas</option>
+                </select>
+            </div>
+              <div class="campo-entrada">
+                <label>Quantidade</label>
+                <input type="number" value="1">
+            </div>
+            <div class="campo-entrada">
+                <label>Valor Unitário (R$)</label>
+                <input type="text" placeholder="0,00">
+            </div>
+            <button class="botao-adicionar">Adicionar ao Orçamento</button>
+        </aside>
+
+        <main>
+            <div class="card-resumo-orcamento">
+                <div class="card-resumo">
+                    <span>Total Geral</span>
+                    <strong>R$ 0,00</strong>
+                </div>
+                <div class="card-resumo">
+                    <span>Itens</span>
+                    <strong>0</strong>
+                </div>
+                <div class="card-resumo">
+                    <span>Mais Caro</span>
+                    <strong>---</strong>
+                </div>
+            </div>
+
+            <div class="tabela-orcamento">
+                <h4>Seu Setup de Corrida</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Cat.</th>
+                            <th>Qtd.</th>
+                            <th>Subtotal</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+      </section>
       <section id="corridas">
         <h2>CORRIDAS <span>PERTO DE VOCÊ</span></h2>
         <div id="cards">
           <div id="card">
-            <img src="https://placehold.co/350x350" alt="" />
+            <img src="images/corrida_furiosa.png" alt="" />
             <div id="paragrafos">
               <p id="preto">4ª CORRIDA CARNAVALESCA DA FURIOSA</p>
               <p id="laranja">01 de fev. de 2026, 05:30 – 5:40</p>
@@ -43,7 +109,7 @@
             <button>ADICIONAR AO ORÇAMENTO</button>
           </div>
           <div id="card">
-            <img src="https://placehold.co/350x350" alt="" />
+            <img src="images/corrida_mulher.png" alt="" />
             <div id="paragrafos">
               <p id="preto">1ª CORRIDA CONTRA O FEMINICÍDIO</p>
               <p id="laranja">08 de mar. de 2026, 05:30 – 5:40</p>
@@ -53,7 +119,7 @@
             <button>ADICIONAR AO ORÇAMENTO</button>
           </div>
           <div id="card">
-            <img src="https://placehold.co/350x350" alt="" />
+            <img src="images/corrida_crianças.png" alt="" />
             <div id="paragrafos">
               <p id="preto">2ª CORRIDA PELAS CRIANÇAS INFATIS</p>
               <p id="laranja">23 de mai. de 2026, 19:00 – 19:05</p>
@@ -79,7 +145,7 @@
         <h2>PARA VOCÊ <span>CORRER BEM</span></h2>
         <div id="cards">
           <div id="card">
-            <img src="https://placehold.co/350x350" alt="" />
+            <img src="images/tenis_asics.png" alt="" />
             <div id="paragrafos">
               <p id="preto">Tênis Asics Gel-Nimbus 27 Masculino Azul</p>
               <p id="laranja">R$ 1.199</p>
@@ -87,7 +153,7 @@
             <button>ADICIONAR AO ORÇAMENTO</button>
           </div>
           <div id="card">
-            <img src="https://placehold.co/350x350" alt="" />
+            <img src="images/tenis_olymp.png" alt="" />
             <div id="paragrafos">
               <p id="preto">Tênis Olympikus Corre Supra 2</p>
               <p id="laranja">R$ 999.99</p>
@@ -95,7 +161,7 @@
             <button>ADICIONAR AO ORÇAMENTO</button>
           </div>
           <div id="card">
-            <img src="https://placehold.co/350x350" alt="" />
+            <img src="images/tenis_olymp2.png" alt="" />
             <div id="paragrafos">
               <p id="preto">Tênis Olympikus Corre Max</p>
               <p id="laranja">R$ 549.99</p>
@@ -108,7 +174,7 @@
         <h2>ACOMPANHE <span>SEU DESENVOLVIMENTO</span></h2>
         <div id="cards">
           <div id="card">
-            <img src="https://placehold.co/350x350" alt="" />
+            <img src="images/p1.png" alt="" />
             <div id="paragrafos">
               <p id="preto">PLANILHA PARA CORREDORES INICIANTES</p>
               <p id="laranja">R$ 1.199</p>
@@ -116,7 +182,7 @@
             <button>ADICIONAR AO ORÇAMENTO</button>
           </div>
           <div id="card">
-            <img src="https://placehold.co/350x350" alt="" />
+            <img src="images/p2.png" alt="" />
             <div id="paragrafos">
               <p id="preto">PLANILHA PARA CORREDORES AMADORES</p>
               <p id="laranja">R$ 999.99</p>
@@ -124,7 +190,7 @@
             <button>ADICIONAR AO ORÇAMENTO</button>
           </div>
           <div id="card">
-            <img src="https://placehold.co/350x350" alt="" />
+            <img src="images/p3.png" alt="" />
             <div id="paragrafos">
               <p id="preto">PLANILHA PARA CORREDORES DE ELITE</p>
               <p id="laranja">R$ 549.99</p>
