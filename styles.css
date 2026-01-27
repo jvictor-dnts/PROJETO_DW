@@ -2,7 +2,7 @@
   --branco: #ffffff;
   --preto: #000000;
   --laranja: #fc4c02;
-  --cinza-escuro: #363636;
+  --cinza-escuro: #222222;
   --cinza-tabela: #dddddd;
 }
 
@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 170px;
+  gap: 150px;
   background-color: var(--laranja);
   color: var(--branco);
   font-style: italic;
@@ -67,6 +67,9 @@ header #tema {
   width: 80px;
   height: 80px;
   background-color: var(--cinza-escuro);
+  background-image: url(images/lua.png);
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -79,19 +82,20 @@ header #tema img {
 #banner-de-romerito {
   position: relative;
   background-color: var(--cinza-escuro);
-  border-radius: 63px;
   margin: 75px 165px;
+  border-radius: 30px;
 }
 
 #banner-de-romerito #romerito {
-  width: 1590px;
-  height: 752px;
-  opacity: 0.3;
+  border-radius: 30px;
+  width: 1500px;
+  height: 1000px;
+  opacity: 0.6;
 }
 
 #banner-de-romerito h2 {
   position: absolute;
-  bottom: 135px;
+  bottom: 50px;
   left: 60px;
   width: 820px;
   font-size: 48px;
@@ -102,6 +106,8 @@ header #tema img {
 
 #banner-de-romerito h2 span {
   color: var(--laranja);
+  font-style: italic;
+  text-decoration: underline;
 }
 
 main {
@@ -146,6 +152,11 @@ main section #cards #card {
   background-color: var(--branco);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 35px 35px 25px 35px;
+  border-radius: 12px;
+}
+
+main section #cards #card img {
+  border-radius: 6px;
 }
 
 main section #cards #card #paragrafos {
@@ -288,13 +299,15 @@ main .botao-adicionar:hover {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: var(--preto);
+  color: var(--branco);
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   font-size: 13px;
+  background-color: #222222;
+  border-radius: 4px;
 }
 
 th,
@@ -304,10 +317,10 @@ td {
 }
 
 th {
+  padding: 15px;
   color: var(--branco);
   text-align: left;
   border-bottom: 2px solid var(--branco);
-  padding: 10px 10px 10px 0px;
   font-size: 16px;
   font-weight: 500;
 } 
@@ -531,17 +544,21 @@ body.dark-mode {
 
 body.dark-mode header {
   background-color: #0E0E0E;
-  border-bottom: 2px solid #333333;
+  border-bottom: 10px solid #333333;
 }
 
 body.dark-mode #card,
 body.dark-mode .card-form,
-body.dark-mode .card-resumo-orcamento,
 body.dark-mode .tabela-orcamento {
   background-color: #3C3C3C;
   color: #ffffff;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .card-resumo-orcamento {
+  color: #ffffff;
+  border: none;
 }
 
 body.dark-mode h1,
@@ -573,6 +590,7 @@ body.dark-mode select {
 body.dark-mode table th {
   background-color: #2A2A2A;
   color: #ffffff;
+  border-radius: 4px;
 }
 
 body.dark-mode table td {
@@ -584,14 +602,31 @@ body.dark-mode #banner-de-romerito {
   background-color: #3C3C3C;
 }
 
-#tema img {
+#tema {
   transition: transform 0.5s ease, opacity 0.3s ease;
 }
 
-body.dark-mode #tema img {
+body.dark-mode #tema {
+  background-color: var(--cinza-escuro);
+  background-image: url(images/sol.png);
+  background-position: center;
+  background-repeat: no-repeat;
   transform: rotate(360deg);
 }
 
 body.dark-mode header #tema {
   background-color: var(--branco);
+}
+
+body.dark-mode main section #cards #card {
+  border-radius: 12px;
+  background-color: #3C3C3C;
+}
+
+body.dark-mode main section #cards #card #preto {
+  color: #ffffff;
+}
+
+body.dark-mode #card img {
+  border-radius: 6px;
 }
