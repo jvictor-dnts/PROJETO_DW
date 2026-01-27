@@ -392,6 +392,25 @@ th {
   }
 }
 
+body,
+header,
+main,
+section,
+footer,
+#card,
+.card-form,
+.card-resumo-orcamento,
+.tabela-orcamento,
+input,
+select,
+button,
+h1, h2, h3, h4, p, span, strong, label, li, td, th {
+  transition: background-color 0.4s ease, 
+              color 0.4s ease, 
+              border-color 0.4s ease, 
+              box-shadow 0.4s ease;
+}
+
 @media (max-width: 600px) {
   body {
     gap: 30px;
@@ -503,4 +522,72 @@ th {
     padding: 8px 5px;
     font-size: 12px;
   }
+}
+
+body.dark-mode {
+  background-color: #1D1D1D;
+  color: #ffffff;
+}
+
+body.dark-mode header {
+  background-color: #0E0E0E;
+  border-bottom: 2px solid #333333;
+}
+
+body.dark-mode #card,
+body.dark-mode .card-form,
+body.dark-mode .card-resumo-orcamento,
+body.dark-mode .tabela-orcamento {
+  background-color: #3C3C3C;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode label,
+body.dark-mode strong,
+body.dark-mode span,
+body.dark-mode li {
+  color: #ffffff ;
+}
+
+body.dark-mode span.destaque-laranja,
+body.dark-mode h2 span,
+body.dark-mode .preco,
+body.dark-mode .total-valor {
+  color: var(--laranja) ;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #cccccc;
+}
+
+body.dark-mode table th {
+  background-color: #2A2A2A;
+  color: #ffffff;
+}
+
+body.dark-mode table td {
+  border-bottom: 1px solid #555555;
+  color: #ffffff;
+}
+
+body.dark-mode #banner-de-romerito {
+  background-color: #3C3C3C;
+}
+
+#tema img {
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+body.dark-mode #tema img {
+  transform: rotate(360deg);
 }
