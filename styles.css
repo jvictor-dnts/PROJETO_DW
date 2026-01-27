@@ -3,14 +3,18 @@
   --preto: #000000;
   --laranja: #fc4c02;
   --cinza-escuro: #363636;
-  --cinza-tabela: #dddddd
+  --cinza-tabela: #dddddd;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Tomorrow";
+  font-family: "Tomorrow", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,57 +27,53 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 190px;
+  gap: 170px;
   background-color: var(--laranja);
   color: var(--branco);
   font-style: italic;
   border-bottom: 10px solid var(--cinza-escuro);
   width: 100%;
+}
 
-  h1 {
-    font-size: 64px;
-  }
+header h1 {
+  font-size: 64px;
+}
 
-  h3 {
-    font-size: 20px;
-  }
+header h3 {
+  font-size: 20px;
+}
 
-  nav {
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
 
-      li {
-        a {
-          text-decoration: none;
-          color: var(--branco);
-          font-size: 24px;
-          font-weight: 600;
+header nav ul li a {
+  text-decoration: none;
+  color: var(--branco);
+  font-size: 24px;
+  font-weight: 600;
+}
 
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
+header nav ul li a:hover {
+  text-decoration: underline;
+}
 
-  #tema {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    background-color: var(--cinza-escuro);
-    border-radius: 12px;
-    cursor: pointer;
-    
-    img {
-      width: 50px;
-      height: 50px;
-    }
-  }
+header #tema {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: var(--cinza-escuro);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+header #tema img {
+  width: 50px;
+  height: 50px;
 }
 
 #banner-de-romerito {
@@ -81,163 +81,166 @@ header {
   background-color: var(--cinza-escuro);
   border-radius: 63px;
   margin: 75px 165px;
-
-  #romerito {
-    width: 1590px;
-    height: 752px;
-    opacity: 0.3;
-  }
-
-  h2 {
-    position: absolute;
-    bottom: 135px;   
-    left: 60px;   
-    width: 820px;
-    font-size: 48px;
-    font-weight: 600;
-    font-style: italic;
-    color: var(--branco);
-
-    span {
-      color: var(--laranja);
-    }
-  }
 }
+
+#banner-de-romerito #romerito {
+  width: 1590px;
+  height: 752px;
+  opacity: 0.3;
+}
+
+#banner-de-romerito h2 {
+  position: absolute;
+  bottom: 135px;
+  left: 60px;
+  width: 820px;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--branco);
+}
+
+#banner-de-romerito h2 span {
+  color: var(--laranja);
+}
+
 main {
   width: 100%;
   margin: 0 120px;
+}
 
-  .secao-ajuste {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 50px;
-  }
+main .secao-ajuste {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 50px;
+}
 
-  .card-form {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    background: var(--branco);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  }
+main section {
+  margin-bottom: 75px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 50px;
+}
 
-  .card-form h3 {
-    margin: 0 0 10px 0;
-    font-size: 24px;
-    width: 100%;
-  }
+main section h2 {
+  width: 100%;
+  color: var(--preto);
+  font-style: italic;
+  font-size: 44px;
+}
 
-  #campos-de-entrada {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    width: 100%;
-  }
+main section h2 span {
+  color: var(--laranja);
+}
 
-  .campo-entrada {
-    margin-bottom: 15px;
-  }
+main section #cards {
+  display: flex;
+  gap: 100px;
+}
 
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+main section #cards #card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 25px;
+  background-color: var(--branco);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 35px 35px 25px 35px;
+}
 
-  input,
-  select {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    border: 1px solid var(--cinza-tabela);
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+main section #cards #card #paragrafos {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+  width: 100%;
+}
 
-  .botao-adicionar {
-    background: var(--laranja);
-    color: var(--branco);
-    max-width: 600px;
-    min-width: 400px;
-    padding: 12px;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    border: none;
-  }
+main section #cards #card button {
+  width: 265px;
+  height: 50px;
+  background-color: var(--laranja);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--branco);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-  .botao-adicionar:hover {
-    background: var(--cinza-escuro);
-  }
+main section #cards #card p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--branco);
+}
 
-  section {
-    margin-bottom: 75px;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 50px;
+main section #cards #card #preto {
+  color: var(--preto);
+}
 
-    h2 {
-      width: 100%;
-      color: var(--preto);
-      font-style: italic;
-      font-size: 44px;
+main section #cards #card #laranja {
+  color: var(--laranja);
+}
 
-      span {
-        color: var(--laranja);
-      }
-    }
+main .card-form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background: var(--branco);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 
-    #cards {
-      display: flex;
-      gap: 100px;
+main .card-form h3 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  width: 100%;
+}
 
-      #card {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        gap: 25px;
-        background-color: var(--branco);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        padding: 35px 35px 25px 35px;
+main #campos-de-entrada {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 100%;
+}
 
-        #paragrafos {
-          display: flex;
-          flex-flow: column nowrap;
-          gap: 5px;
-          width: 100%;
-        }
+main .campo-entrada {
+  margin-bottom: 15px;
+}
 
-        button {
-          width: 265px;
-          height: 50px;
-          background-color: var(--laranja);
-          font-size: 16px;
-          font-weight: 600;
-          color: var(--branco);
-          font-size: 15px;
-          border: none;
-          border-radius: 8px;
-        }
+main label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
 
-        p {
-          width: 100%;
-          font-size: 16px;
-          font-weight: 600;
-          color: var(--branco);
-        }
+main input,
+main select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid var(--cinza-tabela);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-        #preto {
-          color: var(--preto);
-        }
+main .botao-adicionar {
+  background: var(--laranja);
+  color: var(--branco);
+  max-width: 600px;
+  min-width: 400px;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  margin-top: 15px;
+}
 
-        #laranja {
-          color: var(--laranja);
-        }
-      }
-    }
-  }
+main .botao-adicionar:hover {
+  background: var(--cinza-escuro);
 }
 
 #resultados {
@@ -259,15 +262,17 @@ main {
   text-align: center;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 
-  span {
-    font-size: 20px;
-    font-weight: 500;
-  }
+.card-resumo span {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
 
-  strong {
-    font-weight: 500;
-  }
+.card-resumo strong {
+  font-weight: 500;
+  font-size: 1.1em;
 }
 
 .tabela-orcamento {
@@ -277,11 +282,13 @@ main {
   border-radius: 8px;
   min-height: 200px;
   width: 100%;
+}
 
-  h4 {
-    font-size: 20px;
-    font-weight: 600;
-  }
+.tabela-orcamento h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--preto);
 }
 
 table {
@@ -289,10 +296,7 @@ table {
   border-collapse: collapse;
   font-size: 13px;
 }
-table h4 {
-  margin-bottom: 10px;
-  color: var(--preto);
-}
+
 th,
 td {
   padding: 12px;
@@ -306,8 +310,4 @@ th {
   padding: 10px 10px 10px 0px;
   font-size: 16px;
   font-weight: 500;
-}
-
-html {
-  scroll-behavior: smooth;
 }
