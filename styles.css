@@ -310,4 +310,197 @@ th {
   padding: 10px 10px 10px 0px;
   font-size: 16px;
   font-weight: 500;
+} 
+
+@media (max-width: 1200px) {
+  body {
+    gap: 50px;
+  }
+
+  header {
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+  }
+
+  header h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  #banner-de-romerito {
+    margin: 40px 40px;
+    border-radius: 40px;
+    height: auto;
+  }
+
+  #banner-de-romerito #romerito {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  #banner-de-romerito h2 {
+    font-size: 36px;
+    bottom: 40px;
+    left: 40px;
+    width: auto;
+    max-width: 80%;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  main {
+    margin: 0 40px;
+    width: auto;
+  }
+
+  main section #cards {
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  header #nome-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 25px;
+  }
+
+  main #campos-de-entrada {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section #cards #card {
+    max-width: 45%;
+    min-width: 300px;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 30px;
+  }
+
+  header {
+    gap: 15px;
+    border-bottom-width: 5px;
+  }
+
+  header h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  header h3 {
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 0.9;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
+  }
+
+  #banner-de-romerito {
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cinza-escuro);
+  }
+
+  #banner-de-romerito #romerito {
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.6;
+  }
+
+  #banner-de-romerito h2 {
+    position: static;
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    background: transparent;
+    margin: 0;
+  }
+
+  main {
+    margin: 0 20px;
+  }
+
+  main section {
+    margin-bottom: 50px;
+  }
+
+  main section h2 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  main section #cards {
+    gap: 30px;
+  }
+
+  main section #cards #card {
+    max-width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  main #campos-de-entrada {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  main input,
+  main select,
+  main .botao-adicionar {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  main .botao-adicionar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card-resumo-orcamento {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .tabela-orcamento {
+    padding: 10px;
+    overflow-x: auto;
+    border: 1px solid var(--cinza-tabela);
+  }
+
+  table {
+    min-width: 600px;
+  }
+
+  th,
+  td {
+    padding: 8px 5px;
+    font-size: 12px;
+  }
 }
