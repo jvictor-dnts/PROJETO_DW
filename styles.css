@@ -591,3 +591,7 @@ body.dark-mode #banner-de-romerito {
 body.dark-mode #tema img {
   transform: rotate(360deg);
 }
+
+body.dark-mode header #tema {
+  background-color: var(--branco);
+}
