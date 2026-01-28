@@ -254,6 +254,22 @@ main .botao-adicionar:hover {
   background: var(--cinza-escuro);
 }
 
+.botao-remover {
+  background-color: #c41e3a;
+  color: var(--branco);
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-remover:hover {
+  background-color: #a01830;
+}
+
 #resultados {
   width: 100%;
 }
