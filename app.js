@@ -72,7 +72,7 @@ function atualizar() {
                 <td>${item.categoria}</td>
                 <td>${item.quantidade}</td>
                 <td>R$ ${subtotal.toFixed(2).replace('.', ',')}</td>
-                <td><button class="botao-remover" data-id="${item.id}">Remover</button></td>
+                <td><button class="botao-remover" data-id="${item.id}"></button></td>
             </tr>
         `;
     }).join('');
